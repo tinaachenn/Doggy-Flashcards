@@ -50,6 +50,8 @@ GIF created with Loom
 
 ## Notes
 
+Describe any challenges encountered while building the app.
+
 It was a bit of a challenge figuring out how to use the useState concept we learned in class and apply that to flashcards.
 Designing how the application was going to work and all the components that would be necessary seemed really difficult at first
 but once I had a good sense of what I needed to do, everything was fine from there.
