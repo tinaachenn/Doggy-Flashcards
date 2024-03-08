@@ -30,11 +30,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
-<!-- Replace this with whatever GIF tool you used! -->
+<div style="position: relative; padding-bottom: 51.041666666666664%; height: 0;"><iframe src="https://www.loom.com/embed/907f06759ad74289a26c7f2eeee0f5b7?sid=5746c238-08a3-4768-8cf2-3e75f964b9ba" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-GIF created with ...
+GIF created with Loom
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
