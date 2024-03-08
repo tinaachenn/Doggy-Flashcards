@@ -33,11 +33,11 @@ Here's a walkthrough of implemented required features:
 <!-- <img src='https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7?sid=f6166ab6-2403-465e-a4af-edbce26118a1' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 <div>
-    <a href="https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7">
-      <p>Dog Breed Flashcards - 8 March 2024 - Watch Video</p>
+    <a href="https://www.loom.com/share/426397f3815149a5827d10019ef18ab8">
+      <p>Video Walkthrough</p>
     </a>
-    <a href="https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/907f06759ad74289a26c7f2eeee0f5b7-with-play.gif">
+    <a href="https://www.loom.com/share/426397f3815149a5827d10019ef18ab8">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/426397f3815149a5827d10019ef18ab8-with-play.gif">
     </a>
   </div>
 
@@ -50,7 +50,11 @@ GIF created with Loom
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was a bit of a challenge figuring out how to use the useState concept we learned in class and apply that to flashcards.
+Designing how the application was going to work and all the components that would be necessary seemed really difficult at first
+but once I had a good sense of what I needed to do, everything was fine from there.
+
+Figuring out how to randomize which card gets selected was challenging as well.
 
 ## License
 
