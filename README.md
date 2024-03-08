@@ -30,9 +30,16 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+<!-- <img src='https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7?sid=f6166ab6-2403-465e-a4af-edbce26118a1' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
-<div style="position: relative; padding-bottom: 51.041666666666664%; height: 0;"><iframe src="https://www.loom.com/embed/907f06759ad74289a26c7f2eeee0f5b7?sid=5746c238-08a3-4768-8cf2-3e75f964b9ba" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7">
+      <p>Dog Breed Flashcards - 8 March 2024 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/907f06759ad74289a26c7f2eeee0f5b7-with-play.gif">
+    </a>
+  </div>
 
 GIF created with Loom
 
