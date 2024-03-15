@@ -28,15 +28,15 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<img src='https://cdn.loom.com/sessions/thumbnails/2f6639130440498a9f4c1f79f59100fa-with-play.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<!-- <div>
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+<div>
     <a href="https://www.loom.com/share/2f6639130440498a9f4c1f79f59100fa">
-      <p>Dog Breed Flashcards - 15 March 2024 - Watch Video</p>
+      <p>Video Walkthrough</p>
     </a>
     <a href="https://www.loom.com/share/2f6639130440498a9f4c1f79f59100fa">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2f6639130440498a9f4c1f79f59100fa-with-play.gif">
     </a>
-  </div> -->
+  </div>
 
 GIF created with Loom
 
