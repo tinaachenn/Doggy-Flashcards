@@ -1,26 +1,26 @@
-# Web Development Project 2 - _Dog Breeds Flashcards_
+# Web Development Project 3 - _Dog Breeds Flashcards_
 
 Submitted by: **Tina Chen**
 
 This web app: **quizzes users on different dog breeds**
 
-Time spent: **4** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [x] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [x] **A list of card pairs is created**
-- [x] **Clicking on the card shows the corresponding component of the information pair**
-- [x] **Clicking the next button displays a random new card**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [x] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] _visual style implemented_
+- [x] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [x] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,35 +28,24 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
-
-<!-- <img src='https://www.loom.com/share/907f06759ad74289a26c7f2eeee0f5b7?sid=f6166ab6-2403-465e-a4af-edbce26118a1' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
-
-<div>
-    <a href="https://www.loom.com/share/426397f3815149a5827d10019ef18ab8">
-      <p>Video Walkthrough</p>
+<img src='https://cdn.loom.com/sessions/thumbnails/2f6639130440498a9f4c1f79f59100fa-with-play.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <div>
+    <a href="https://www.loom.com/share/2f6639130440498a9f4c1f79f59100fa">
+      <p>Dog Breed Flashcards - 15 March 2024 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/426397f3815149a5827d10019ef18ab8">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/426397f3815149a5827d10019ef18ab8-with-play.gif">
+    <a href="https://www.loom.com/share/2f6639130440498a9f4c1f79f59100fa">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2f6639130440498a9f4c1f79f59100fa-with-play.gif">
     </a>
-  </div>
+  </div> -->
 
 GIF created with Loom
-
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
 Describe any challenges encountered while building the app.
 
-It was a bit of a challenge figuring out how to use the useState concept we learned in class and apply that to flashcards.
-Designing how the application was going to work and all the components that would be necessary seemed really difficult at first
-but once I had a good sense of what I needed to do, everything was fine from there.
-
-Figuring out how to randomize which card gets selected was challenging as well.
+It was challenging trying to figure out how to combine state changes with input and submit button functionalities.
+I also had no idea how to disable the buttons for when a certain index is reached but I was able to consult chatGPT for help and understand how the mechanism works.
 
 ## License
 

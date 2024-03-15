@@ -5,10 +5,12 @@
   text-align: center;
 }
 
-.flashcard img {
-  max-width: 400px;
-  max-height: 300px;
-  border-radius: 10px;
+.correct-answer {
+  border: 2px solid green;
+}
+
+.incorrect-answer {
+  border: 2px solid red;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -19,10 +21,55 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 0 auto;
   text-align: center;
+  /* border: 1px solid lightblue;
+  border-radius: 10px; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateX(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flashcard-front {
+  /* background-color: #fcfcfc; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid lightblue;
   border-radius: 10px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flashcard-back {
+  /* background-color: #f0f0f0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(180deg);
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+
+.flashcard img {
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
 }

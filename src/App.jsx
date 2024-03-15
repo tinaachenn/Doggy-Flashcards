@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Flashcard from './components/Flashcard';
 import './App.css';
 
@@ -24,11 +24,56 @@ const App = () => {
     ];
   
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const currentCard = cardPairs[currentCardIndex];
+  const [shuffledPairs, setShuffledPairs] = useState([...cardPairs]);
+  const [currentStreakCount, setStreakCount] = useState(0);
+  const [longestStreakCount, setLongestStreakCount] = useState(0);
+  const currentCard = shuffledPairs[currentCardIndex];
+  const inputElementRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const userInput = inputElementRef.current.value.trim().toLowerCase(); // Access input element using ref
+    const correctAnswer = currentCard.answer.trim().toLowerCase();
+
+    if (userInput === correctAnswer) {
+      console.log('Correct answer!');
+      inputElementRef.current.classList.remove('incorrect-answer');
+      inputElementRef.current.classList.add('correct-answer');
+      setStreakCount(currentStreakCount + 1);
+
+      if (currentStreakCount + 1 > longestStreakCount) {
+        setLongestStreakCount(currentStreakCount + 1);
+      }
+    } else {
+      console.log('Incorrect answer!');
+      inputElementRef.current.classList.remove('correct-answer');
+      inputElementRef.current.classList.add('incorrect-answer');
+      setStreakCount(0);
+    }
+
+    inputElementRef.current.value = '';
+  };
+
+  const handleShuffle = () => {
+    const shuffled = [...cardPairs].sort(() => Math.random() - 0.5);
+    setShuffledPairs(shuffled);
+    setCurrentCardIndex(0);
+    setStreakCount(0);
+    inputElementRef.current.classList.remove('correct-answer');
+    inputElementRef.current.classList.remove('incorrect-answer');
+  };
+
+  const handleBackCard = () => {
+    setCurrentCardIndex((prevIndex) => (prevIndex === 0 ? shuffledPairs.length - 1 : prevIndex - 1));
+    inputElementRef.current.classList.remove('correct-answer');
+    inputElementRef.current.classList.remove('incorrect-answer');
+  };
 
   const handleNextCard = () => {
-    const randomIndex = Math.floor(Math.random() * cardPairs.length);
-    setCurrentCardIndex(randomIndex);
+    setCurrentCardIndex((prevIndex) => (prevIndex === shuffledPairs.length - 1 ? 0 : prevIndex + 1));
+    inputElementRef.current.classList.remove('correct-answer');
+    inputElementRef.current.classList.remove('incorrect-answer');
   };
 
   return (
@@ -37,11 +82,16 @@ const App = () => {
         <h2>Name that dog breed!</h2>
         <h4>Think you know more dog breeds than the average person? Put it to the test!</h4>
         <h5>Number of cards: {cardPairs.length-1}</h5>
+        <h5>Streak: {currentStreakCount}, Longest Streak: {longestStreakCount}</h5>
       </div>
       <div className='container'>
         <Flashcard question={currentCard.question} answer={currentCard.answer} imgSrc={currentCard.imgSrc} />
       </div>
-      <button className="next_button"onClick={handleNextCard}>Next</button>
+      <input ref={inputElementRef} id="answerInput" type="text" placeholder="Enter your answer here" />
+      <button className="submit_button" onClick={handleSubmit}>Submit</button> <br></br>
+   <button className="back_button" onClick={handleBackCard} disabled={currentCardIndex === 0}>←</button>
+    <button className="next_button" onClick={handleNextCard} disabled={currentCardIndex === shuffledPairs.length - 1}>→</button>
+      <button className="shuffle_button" onClick={handleShuffle}>Shuffle</button>
     </div>
   )
 }
